@@ -131,40 +131,40 @@ while logging_active:
     response = input(prompt).lower()
     
     if response == 'german':
-        print("I suggest you try a German Helles, a German Pilsner, or an Oktoberfest.") [cite: 2]
+        print("I suggest you try a German Helles, a German Pilsner, or an Oktoberfest.")
         
     elif response == 'veggies':
-        print("Veggies pair well with Oktoberfest Beers.") [cite: 2]
+        print("Veggies pair well with Oktoberfest Beers.")
         if input("Would you like a list of Oktoberfest beers? ").lower() == 'yes':
             print(dark_lagers['oktoberfest']['examples'])
         
         if input("Would you like more details (abv, serving temp)? ").lower() == 'yes':
-            print(f"ABV: {dark_lagers['oktoberfest']['abv']}%, Serving Temp: {dark_lagers['oktoberfest']['serving_temp']}F.") [cite: 2]
+            print(f"ABV: {dark_lagers['oktoberfest']['abv']}%, Serving Temp: {dark_lagers['oktoberfest']['serving_temp']}F.")
 
     elif response == 'meat' or response == 'heavy_foods':
-        print("I suggest an American Stout or an Oktoberfest.") [cite: 2]
+        print("I suggest an American Stout or an Oktoberfest.")
         if input("See Stout details? ").lower() == 'yes':
-            print(f"ABV: {ales['american_stout']['abv']}%, Examples: {ales['american_stout']['examples']}") [cite: 2]
+            print(f"ABV: {ales['american_stout']['abv']}%, Examples: {ales['american_stout']['examples']}")
 
     elif response in ['poultry', 'fish', 'spicy_cheese']:
-        print("A German Pilsner is a great choice.") [cite: 2]
+        print("A German Pilsner is a great choice.")
         if input("See examples? ").lower() == 'yes':
             print(lager_pils['german_pilsner']['examples'])
 
     elif response in ['spicy', 'asian']:
-        print("Try an American Lager or a Bohemian Pilsner.") [cite: 2]
+        print("Try an American Lager or a Bohemian Pilsner.")
 
     elif response in ['burgers', 'american']:
-        print("An American Pale Ale or Amber Lager pairs well with burgers.") [cite: 2]
+        print("An American Pale Ale or Amber Lager pairs well with burgers.")
 
     elif response in ['seafood', 'fruit']:
-        print("Try a Belgian Witbier or a Berliner Weisse.") [cite: 2]
+        print("Try a Belgian Witbier or a Berliner Weisse.")
 
     elif response == 'bbq':
-        print("A Smoked Beer is highly recommended for BBQ.") [cite: 2]
+        print("A Smoked Beer is highly recommended for BBQ.")
 
     elif response == 'chocolate' or response == 'oysters':
-        print("An American Stout is the perfect pairing.") [cite: 2]
+        print("An American Stout is the perfect pairing.")
 
     else:
         print("Please make a choice from the list.")
